@@ -1,0 +1,133 @@
+/* Дополнительные стили поверх Tailwind */
+body {
+    overflow-x: hidden;
+}
+
+/* Header */
+.header-title {
+    animation: fadeIn 1s ease-out;
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #00c6ff;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -8px;
+    left: 50%;
+    background: #00c6ff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero */
+.hero {
+    background: url('https://source.unsplash.com/random/1920x1080?tech,dark') no-repeat center/cover;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.hero-title, .hero-text, .hero-btn {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.hero-particles {
+    pointer-events: none;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(0, 198, 255, 0.6);
+    border-radius: 50%;
+    animation: float 4s infinite ease-in-out;
+    z-index: 0;
+}
+
+/* Sections */
+.section {
+    opacity: 1;
+}
+
+/* Experience */
+.job-list li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: #00c6ff;
+}
+
+/* Skills */
+.skill-item {
+    transition: all 0.4s ease;
+    color: #ffffff;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px) scale(1.1) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Красные навыки */
+.skill-item.bg-gradient-to-r.from-red-500.to-pink-500 {
+    opacity: 1 !important;
+}
+
+.skill-item.bg-gradient-to-r.from-red-500.to-pink-500:hover {
+    transform: translateY(-10px) scale(1.1) !important;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 0.8; }
+    50% { transform: translateY(-30vh) scale(1.2); opacity: 0.4; }
+    100% { transform: translateY(-60vh) scale(0.8); opacity: 0; }
+}
+
+/* Кнопка "Связаться со мной" */
+.hero-btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.5);
+    opacity: 1 !important;
+    transform: none !important;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 8px 25px rgba(0, 198, 255, 0.8);
+}
