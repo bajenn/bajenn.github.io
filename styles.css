@@ -6,22 +6,20 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative; /* Для позиционирования круга */
+    position: relative;
 }
 
-/* Круг */
 .hero-circle {
     position: absolute;
     width: 500px;
     height: 500px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    top: -300px; /* Сдвигаем выше, чтобы пересекал шапку */
-    left: 100px; /* Сдвигаем левее */
-    z-index: 7; /* z-index ниже шапки, но выше фона */
+    top: -300px; 
+    left: 100px; 
+    z-index: 7; 
 }
 
-/* Контейнер для центрирования */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -36,7 +34,7 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 10; /* Выше круга */
+    z-index: 10; 
     width: 100%;
 }
 
@@ -115,7 +113,6 @@ header .btn:hover {
     height: 18px;
 }
 
-/* Основной заголовок */
 .hero {
     background-color: #28A745;
     text-align: center;
@@ -123,7 +120,7 @@ header .btn:hover {
     flex-shrink: 0;
     width: 100%;
     position: relative;
-    z-index: 1; /* Ниже шапки и круга */
+    z-index: 1; 
 }
 
 .hero h1 {
@@ -132,7 +129,6 @@ header .btn:hover {
     margin: 0;
 }
 
-/* Секция info */
 .info {
     background-color: white;
     padding: 20px 0;
@@ -159,7 +155,6 @@ header .btn:hover {
     font-weight: bold;
 }
 
-/* Блок "Круто делаю:" */
 .column ul {
     list-style: none;
     padding: 0;
@@ -181,7 +176,6 @@ header .btn:hover {
     color: #666;
 }
 
-/* Стили для других блоков */
 .fact {
     display: flex;
     align-items: center;
@@ -217,7 +211,6 @@ header .btn:hover {
     text-decoration: underline;
 }
 
-/* Футер */
 footer {
     background-color: white;
     padding: 10px 0;
