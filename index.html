@@ -4,105 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бажен Сулейманов</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white">
-    <header class="header fixed w-full top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-lg">
-        <div class="container mx-auto px-4 py-6 flex items-center justify-between">
-            <div>
-                <h1 class="header-title text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Бажен Сулейманов</h1>
-                <p class="subtitle text-sm opacity-75">Бывший директор Кибер Групп | Проджект-менеджер</p>
+<body>
+    <!-- Круг, который должен пересекать шапку -->
+    <div class="hero-circle"></div>
+
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span></span>
             </div>
-            <nav class="nav">
-                <ul class="flex space-x-8">
-                    <li><a href="#about" class="nav-link">Обо мне</a></li>
-                    <li><a href="#experience" class="nav-link">Опыт</a></li>
-                    <li><a href="#skills" class="nav-link">Навыки</a></li>
-                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+            <nav>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
+            <a href="#contact" class="btn">Связаться со мной</a>
+            <div class="contacts">
+                <span>+375(44)535-75-51</span>
+                <a href="mailto:trenv1x@vk.com" class="email">trenv1x@vk.com</a>
+                <div class="social-icons">
+                    <a href="https://t.me/bazhenkas"><img src="telegram.png" alt="Telegram"></a>
+                    <a href="https://www.linkedin.com/in/bajen/"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="hero" class="hero min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="hero-title text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-6">Привет, меня зовут Бажен</h2>
-            <p class="hero-text text-xl md:text-2xl mb-4 max-w-3xl mx-auto">Бывший директор Кибер Групп, теперь стремлюсь к карьере проджект-менеджера.</p>
-            <p class="hero-text text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Активный и организованный специалист с опытом управления операционными процессами в ритейле. Развил навыки планирования, координации команды и работы в условиях многозадачности. Стремлюсь применить свои способности в роли джуниор проджект-менеджера в IT, используя знания методологий и инструментов.</p>
-            <p class="hero-text text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-yellow-300">🐱🍪</p>
-            <a href="#contact" class="btn hero-btn inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">Связаться со мной</a>
-        </div>
-        <div class="hero-particles absolute inset-0 z-0"></div>
-    </section>
-
-    <section id="about" class="section about py-24">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title text-4xl md:text-5xl font-bold text-center mb-12">Обо мне</h2>
-            <p class="section-text text-lg md:text-xl max-w-3xl mx-auto">Профессионал с опытом руководства в бизнесе, где развивал лидерские и организационные навыки. Сейчас я переориентируюсь на роль джуниор проджект-менеджера, чтобы применить свой опыт в управлении проектами.</p>
+    <!-- Основной заголовок -->
+    <section class="hero">
+        <div class="container">
+            <h1>Привет, меня зовут Бажен с 2001 года</h1>
         </div>
     </section>
 
-    <section id="experience" class="section experience py-24 bg-gray-800 bg-opacity-50">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title text-4xl md:text-5xl font-bold text-center mb-12">Опыт работы</h2>
-            <div class="job bg-gray-900 bg-opacity-80 p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
-                <h3 class="job-title text-2xl md:text-3xl font-semibold text-cyan-400 mb-4">Директор, "Кибер Групп"</h3>
-                <p class="date text-gray-400 mb-6">[2022–2024]</p>
-                <ul class="job-list text-left space-y-4">
-                    <li class="relative pl-8">Открыл 2 компьютерных клуба, где настроил все внутренние и внешние процессы.</li>
-                    <li class="relative pl-8">Координировал работу команды, распределял задачи и контролировал их выполнение.</li>
-                    <li class="relative pl-8">Оптимизировал процессы.</li>
-                    <li class="relative pl-8">Внедрил системы учета.</li>
+    <!-- Секция с информацией -->
+    <section class="info">
+        <div class="container">
+            <div class="column">
+                <h2>Круто делаю:</h2>
+                <ul>
+                    <li>Waterfall, Agile, Scrum, Kanban</li>
+                    <li>Планирование, Коммуникация, Стрессоустойчивость</li>
+                    <li>Jira, Trello, MS Project</li>
+                    <li>Google Docs, Bitrix24, Figma</li>
+                    <li>Java, Go, HTML, CSS, JS</li>
+                    <li>Git, SQL</li>
                 </ul>
             </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section skills py-24">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title text-4xl md:text-5xl font-bold text-center mb-12">Навыки</h2>
-            <ul class="skills-list flex flex-wrap justify-center gap-6">
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-md">Waterfall, Agile, Scrum, Kanban</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-md">Планирование, Коммуникация, Стрессоустойчивость</li>
-            </ul>
-            <ul class="skills-list flex flex-wrap justify-center gap-6 mt-4">
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Jira</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Trello</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">MS Project</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Google Docs</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Bitrix24</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Figma</li>
-            </ul>
-            <ul class="skills-list flex flex-wrap justify-center gap-6 mt-4">
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Java</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Go</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Html, css, js</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">Git</li>
-                <li class="skill-item px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-md">SQL</li>
-                
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact py-24 bg-gray-800 bg-opacity-50">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title text-4xl md:text-5xl font-bold text-center mb-12">Контакты</h2>
-            <div class="contact-info text-lg md:text-xl space-y-6 max-w-md mx-auto">
-                <p>Телефон: <span class="text-cyan-400">+375(44)535-75-51</span></p>
-                <p>Email: <span class="text-cyan-400">trenv1x@vk.com</span></p>
-                <p><a href="https://t.me/bazhenkas" class="text-blue-400 hover:text-cyan-400 transition-colors">Telegram</a></p>
-                <p><a href="https://www.linkedin.com/in/bajen/" class="text-blue-400 hover:text-cyan-400 transition-colors">LinkedIn</a></p>
+            <div class="column">
+                <h2>Факты обо мне:</h2>
+                <div class="fact">
+                    <img src="icon-projects.png" alt="Projects">
+                    <p>2 успешных проекта</p>
+                </div>
+                <div class="fact">
+                    <img src="icon-rocket.png" alt="Since">
+                    <p>2022 год начала карьеры</p>
+                </div>
+            </div>
+            <div class="column">
+                <h2>Опыт работы:</h2>
+                <ul>
+                    <li>Директор, "Кибер Групп" [2022–2024]</li>
+                    <li>Открыл 2 компьютерных клуба, настроил процессы</li>
+                    <li>Координировал команду и оптимизировал процессы</li>
+                    <li>Внедрил системы учета</li>
+                </ul>
+            </div>
+            <div class="column partners">
+                <h2>Контакты:</h2>
+                <div class="contact-info">
+                    <p>Телефон: <span>+375(44)535-75-51</span></p>
+                    <p>Email: <span>trenv1x@vk.com</span></p>
+                    <p><a href="https://t.me/bazhenkas">Telegram</a></p>
+                    <p><a href="https://www.linkedin.com/in/bajen/">LinkedIn</a></p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer bg-gray-900 py-12 text-center">
-        <div class="container mx-auto px-4">
-            <p class="text-sm opacity-75">© 2025 Бажен Сулейманов. Все права защищены.</p>
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="cookie-notice">
+                <p>Пользуясь этим сайтом, вы соглашаетесь с тем, что я использую ваши печеньки >:). Это нужно для моего насыщения.</p>
+                <button id="cookie-accept">Хорошо</button>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Бажен Сулейманов. Все права защищены.</p>
+            </div>
         </div>
     </footer>
 
